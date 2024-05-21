@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">JAVASCRIPT -- CALCULATOR</h1>
+    </div>
+    <div class="global-container">
+        <form class="class-id" method="POST" action="#!" id="submit_form">
+            <input class="window-container-space" type="text" placeholder="0" value=0 id="windows"/>
+                <div class="inner-container">
+                    <div class="vector-5">
+                        <button class="clear" id="ac" value="ac" type="submit" onClick="btn_ac">CE</button>
+                        <button class="percent" id="percent" value="%" type="submit" onClick="btn_percent">%</button>
+                        <button class="digit-div" id="division" value="÷" type="submit" onClick="btn_division" data-action="divide">÷</button>
+                    </div>
+                    <div class="vector-4">
+                        <button class="digit-7" id="sevenNth" value=7 type="submit" onsubmit="submit_form">7</button>
+                        <button class="digit-8" id="eightNth" value=8 type="submit" onClick="btn_eight">8</button>
+                        <button class="digit-9" id="nineNth" value=9 type="submit" onClick="btn_nine">9</button>
+                        <button class="digit-mult" id="multiply" value="X" type="submit" onClick="btn_multiply" data-action="multiply"> X </button>
+                    </div>
+                    <div class="vector-3">
+                        <button class="digit-4" id="fourNth" value="4" type="submit" onClick="btn_four">4</button>
+                        <button class="digit-5" id="fiveNth" value="5" type="submit" onClick="btn_five">5</button>
+                        <button class="digit-6" id="sixNth" value="6" type="submit" onClick="btn_six">6</button>
+                        <button class="digit-sub" id="subtract" value="-" type="submit" onClick="btn_subtract" data-action="subtract"> - </button>
+                    </div>
+                    <div class="vector-2">
+                        <button class="digit-1" id="oneNth" value="1" type="submit" onClick="btn_one">1</button>
+                        <button class="digit-2" id="twoNth" value="2" type="submit" onClick="btn_two">2</button>
+                        <button class="digit-3" id="threeNth" value="3" type="submit" onClick="btn_three">3</button>
+                        <button class="digit-plus" id="plus" value="+" type="submit" onClick="btn_plus" data-action="addition"> + </button>
+                    </div>
+                    <div class="vector-1">
+                        <button class="digit-0" id="zeroNth" value="(0)" type="submit" onClick="btn_zero">0</button>
+                        <button class="digit-period" id="period" value="." type="submit" onClick="btn_period">.</button>
+                        <button class="backspace" id="bs" value="bs" type="submit" onClick="btn_bs">␈</button>
+                        <button class="digit-equal" id="equal" value="=" type="submit" onClick="btn_equal" data-action="calculate"> = </button>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script type="module" src="./App.mjs"></script>
+</body>
+</html>
+
+
+
+
+
+
+

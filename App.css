@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/* Firefox */
+input[type=number] {
+-webkit-appearance: none, textfield;
+}
+
+
+.title-container {
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 255, 0.75);
+    text-decoration: underline;
+    margin-bottom: 8%;
+    margin-top: 1.5%;
+}
+
+.global-container {
+    margin-left: 35%;
+    height: 480px;
+    max-height: 100%;
+    width: 400px;
+    max-width: 70%;
+    border: 5.5px outset rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    background-color: rgba(20, 40, 255, 0.40);
+}
+.inner-container {
+    width: 315px;
+    margin-top: 8%;
+    background-color: rgba(110, 110, 110, 0.2);
+    color: #fff;
+    margin-left: 9%;
+}
+
+.vector-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.10rem;
+    justify-content: start;
+    border-radius: 3px;
+    border: 1px inset #fff;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(55, 55, 55, 0.25);
+}
+
+.vector-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.10rem;
+    justify-content: start;
+    border-radius: 3px;
+    border: 1px inset #fff;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(55, 55, 55, 0.25);
+}
+
+.vector-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.10rem;
+    justify-content: start;
+    border-radius: 3px;
+    border: 1px inset #fff;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(55, 55, 55, 0.25);
+}
+
+.vector-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.10rem;
+    justify-content: start;
+    border-radius: 3px;
+    border: 1px inset #fff;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(55, 55, 55, 0.25);
+}
+
+.vector-5 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.10rem;
+    justify-content: start;
+    border-radius: 3px;
+    border: 1px inset #fff;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(55, 55, 55, 0.25);
+}
+button {
+    font-family: monospace;
+    font-weight: 900;
+    line-height: 3.380rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.window-container-space {
+    border: 3px inset rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(0, 255, 0, 1);
+    padding-top: 1px;
+    padding-left: 4.5%;
+    padding-bottom: 1px;
+    text-align: start;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: monospace;
+    margin-top: 8.2%;
+    margin-left: 11%;
+    width: 675px;
+    max-width: 80%;
+}
+.clear {
+    padding-left: 20%;
+   padding-right: 20%;
+    border: 1.4px outset rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+.clear:hover {
+    color: rgba(255, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(255, 0, 0, 1);
+}
+.backspace {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 3rem;
+}
+.backspace:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 255, 0, 1);
+    border: 1.2px outset rgba(255, 255, 255, 1);
+}
+.percent {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+.percent:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+.digit-div {
+    padding-left: 11.25%;
+    padding-right: 11.25%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+}
+.digit-div:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+.digit-7 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-7:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+
+.digit-8 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-8:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-9 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-9:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-mult {
+    padding-left: 11.25%;
+    padding-right: 11.25%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+.digit-mult:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+.digit-4 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-4:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-5 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-5:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-6 {
+   padding-left: 9.5%;
+   padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-6:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-sub {
+    padding-left: 11.25%;
+    padding-right: 11.25%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+.digit-sub:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+.digit-1 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-1:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-2 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-2:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-3 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-3:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-plus {
+    padding-left: 11.25%;
+    padding-right: 11.25%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+.digit-plus:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+.digit-0 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-0:hover {
+    color: rgba(0, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(0, 255, 0, 1);
+}
+.digit-period {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.digit-period:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+
+.digit-equal {
+    padding-left: 11.25%;
+    padding-right: 11.25%;
+    border: 1.4px outset #fff;
+    border-radius: 5.5px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.8rem;
+}
+.digit-equal:hover {
+    color: rgba(200, 255, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1.2px outset rgba(200, 255, 0, 1);
+}
+
+
+
+

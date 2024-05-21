@@ -1,0 +1,35 @@
+import { Data } from './data.mjs';
+
+addEventListener('click', Data.onClick, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
